@@ -1,8 +1,2 @@
 udp_topics:
  - name: "/my_first_topic"
-   compress: true # enable zstd compression
-   rate: 2.0 # rate limit at 1Hz
- - name: "/my_second_topic"
-
-tcp_topics:
- - name: "/tcp_topic"

@@ -1,5 +1,2 @@
 udp_topics:
- - name: "/thirdtopic"
-
-tcp_topics:
- - name: "/tcp_topic"
+ - name: "/teleop/dyna_slave"
