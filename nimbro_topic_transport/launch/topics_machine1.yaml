@@ -1,2 +1,6 @@
-topics:
- - name: "/teleop/dyna_master"
+udp_topics:
+ - name: "/my_first_topic"
+ - name: "/my_second_topic"
+
+tcp_topics:
+ - name: "/tcp_topic"

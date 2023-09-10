@@ -1,9 +1,9 @@
 <launch>
-    <arg name="target" default="localhost" />
+    <arg name="target" default="192.168.1.175" />
     <arg name="allow_bidirectional" default="false" />
 
     <!-- The TCP sender node -->
-    <node name="tcp_sender_machine2" pkg="nimbro_topic_transport" type="tcp_sender" output="screen">
+    <node name="tcp_sender_machine2" pkg="nimbro_topic_transport" type="sender" output="screen">
 
         <!-- The destination host name or IP address -->
         <param name="destination_addr" value="$(arg target)" />
@@ -18,7 +18,7 @@
         <rosparam param="ignored_publishers" unless="$(arg allow_bidirectional)">[]</rosparam>
     </node>
 
-    <node name="tcp_receiver_machine2" pkg="nimbro_topic_transport" type="tcp_receiver" output="screen">
+    <node name="tcp_receiver_machine2" pkg="nimbro_topic_transport" type="receiver" output="screen">
         <param name="port" value="17001" />
 
         <!-- Remap topics so that sender & receiver do not clash if run on the
