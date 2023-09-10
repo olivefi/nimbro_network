@@ -10,7 +10,7 @@
 		<param name="port" value="17002" />
 
 		<!-- Load the list of topics from a YAML file -->
-		<rosparam command="load" file="$(find nimbro_topic_transport)/launch/topics_machine1.yaml" />
+		<rosparam command="load" file="$(find nimbro_topic_transport)/launch/topics_machine2.yaml" />
 	</node>
 
 	<node name="receiver" pkg="nimbro_topic_transport" type="receiver" output="screen">
